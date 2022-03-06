@@ -1,0 +1,11 @@
+{
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "cSpell.words": [
+    "browserslist",
+    "mapbox",
+    "mapboxgl",
+    "reduxjs",
+    "stylelint",
+    "testid"
+  ]
+}
