@@ -6,6 +6,7 @@
     "mapboxgl",
     "reduxjs",
     "stylelint",
-    "testid"
+    "testid",
+    "vite"
   ]
 }

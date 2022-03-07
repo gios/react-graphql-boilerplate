@@ -1,1 +1,1 @@
-# project-trail-ui
+# react-graphql-boilerplate

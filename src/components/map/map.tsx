@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
-import * as classes from "./Map.module.scss";
+import classes from "./map.module.scss";
 
 export function Map() {
-  mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN as string;
+  // mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string;
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map>();
   const [lng, setLng] = useState(-70.9);

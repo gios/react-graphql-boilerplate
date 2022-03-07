@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import { Map } from "./components/Map/Map";
+import { Map } from "./components/map/map";
 
 export function App() {
   return (
