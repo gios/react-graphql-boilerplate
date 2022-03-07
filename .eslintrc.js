@@ -6,6 +6,7 @@ module.exports = {
     project: ["./tsconfig.json"],
     ecmaFeatures: {
       jsx: true,
+      jest: true,
     },
   },
   plugins: ["@typescript-eslint", "jest", "react", "react-hooks"],
