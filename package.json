@@ -1,6 +1,6 @@
 {
   "name": "react-graphql-boilerplate",
-  "source": "src/index.html",
+  "source": "index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "vite",
