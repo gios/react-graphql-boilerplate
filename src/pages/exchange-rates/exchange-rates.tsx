@@ -1,22 +1,16 @@
-import { useQuery } from "@apollo/client";
 import { Fragment } from "react";
 
-import getExchangeRates from "./get-exchange-rates.gql";
-
-interface Rates {
-  currency: string;
-  rate: number;
-}
+import { useGetExchangeRates } from "../../hooks/exchange-rates/use-get-exchange-rates";
+import { HomeLayout } from "../../layouts/home/home";
 
 export function ExchangeRates() {
-  const { loading, error, data } =
-    useQuery<{ rates: Rates[] }>(getExchangeRates);
+  const { loading, error, data } = useGetExchangeRates();
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
   return (
-    <>
+    <HomeLayout>
       {data?.rates.map(({ currency, rate }) => (
         <Fragment key={currency}>
           <p>
@@ -24,6 +18,6 @@ export function ExchangeRates() {
           </p>
         </Fragment>
       ))}
-    </>
+    </HomeLayout>
   );
 }

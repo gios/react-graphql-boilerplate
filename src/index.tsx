@@ -1,16 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import { ApolloProvider } from "@apollo/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "./assets/styles/index.scss";
 import { App } from "./app";
 import { ExchangeRates } from "./pages/exchange-rates/exchange-rates";
-
-const client = new ApolloClient({
-  uri: "https://48p1r2roz4.sse.codesandbox.io",
-  cache: new InMemoryCache(),
-});
+import client from "./common/apollo-client";
 
 const app = document.getElementById("app");
 ReactDOM.render(
