@@ -21,7 +21,7 @@ describe("Map", () => {
     jest.resetModules();
   });
 
-  test("renders a message", () => {
+  test("renders a map", () => {
     const elem = render(<Map />);
     const mapSpy = jest.spyOn(mapboxgl, "Map");
     expect(mapSpy).toHaveBeenCalledTimes(1);
